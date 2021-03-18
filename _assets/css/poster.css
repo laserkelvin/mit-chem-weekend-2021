@@ -1,0 +1,91 @@
+
+@import reveal.css;
+@import url('https://fonts.googleapis.com/css?family=Work+Sans|Roboto|Open+Sans&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+html {
+    font-family: "Open Sans";
+    font-size: calc(1em + 1vw);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-kerning: auto;
+}
+
+p {
+    line-height: calc(1ex / 0.32);
+    font-family: "Open Sans"
+}
+
+h1 {
+  font-size: calc(3em + 1vw);
+}
+
+h1, h2, h3 {
+  text-transform: capitalize;
+  font-family: "Roboto"
+}
+
+.subtitle {
+  font-size: calc(1.5em + 1vw);
+  font-style: italic;
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+}
+
+.showcase > div {
+  max-width: 90%;
+}
+
+ul li {
+  text-align: left;
+  margin-top: 40px
+}
+
+.slide-background {
+	opacity: 0.1 !important;
+}
+
+.phys-head:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: url('../../figures/complex-spectrum.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+
+.astro-head:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url('https://acs-h.assetsadobe.com/is/image//content/dam/cen/99/10/WEB/09910-leadcon-stars.jpg/?$responsive$&wid=700&qlt=90,0&resMode=sharp2');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+
+a:link, a:visited, a:active {
+  color: black;
+  text-decoration: underline;
+  -webkit-text-decoration-color: salmon;
+  text-decoration-color: rgba(250, 128, 114, 0.6);
+  -webkit-text-decoration-style: wavy;
+  text-decoration-style: wavy;
+}
